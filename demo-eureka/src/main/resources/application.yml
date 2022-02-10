@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: localhost-1
+    hostname: localhost
     instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
   client:
     registerWithEureka: false

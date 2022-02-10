@@ -9,6 +9,16 @@
         <option value="$PROJECT_DIR$/demo-web/pom.xml" />
         <option value="$PROJECT_DIR$/demo-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/demo-web-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-web-http1/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/demo-service-http1/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-service-http1/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-web-feign-http1/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-http1/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-http2/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-http2-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-http1/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-http1-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-http2/pom.xml" />
       </list>
     </option>
   </component>
