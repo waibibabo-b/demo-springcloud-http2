@@ -1,28 +1,22 @@
 spring:
   application:
     name: @name@
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
 server:
   port: 8062
-#  compression:
-#    enabled: true
-#  http2:
-#    enabled: true
-#  ssl:
-#    enabled: true
-#    key-store: classpath:keystore.p12
-#    key-store-password: 123456
-#    key-store-type: PKCS12
-#    protocol: TLSv1.2
-#    key-alias: tsc-http2
-eureka:
-  instance:
-    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
-    hostname: localhost
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    healthcheck:
-      enabled: true
+#eureka:
+#  instance:
+#    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+#    hostname: localhost
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#    healthcheck:
+#      enabled: true
 info:
   app.name: @name@
   jdk.version: @java.version@

@@ -3,17 +3,22 @@ server:
 spring:
   application:
     name: @name@
-eureka:
-  instance:
-    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
-    hostname: localhost
-    metadata-map:
-      profile: test
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    healthcheck:
-      enabled: true
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+#eureka:
+#  instance:
+#    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+#    hostname: localhost
+#    metadata-map:
+#      profile: test
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#    healthcheck:
+#      enabled: true
 info:
   app.name: @name@
   jdk.version: @java.version@
